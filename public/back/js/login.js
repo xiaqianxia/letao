@@ -87,6 +87,11 @@ $(function() {
 
   });
 
+//给reset 按钮注册一个点击事件
+  $("[type='reset']").on("click",function(){
+  //  重置校验的样式
+    $form.data("bootstrapValidator").resetForm();
+  });
 
 
 });
